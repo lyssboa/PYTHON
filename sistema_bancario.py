@@ -56,3 +56,9 @@ def saque(saque,saldo):
              numero_saques += 1
     return saldo
 
+def extrato (saldo):  
+    hora = datetime.now() #Obtem a hora atual 
+    horaatual = hora.strftime('%d/%m/%Y/ %H:%M')
+    print('=============Extrato=============')
+    print(f'{horaatual} \nSaldo disponível:{saldo}' )
+    print('\n=============Extrato=============')
