@@ -85,3 +85,17 @@ def novo_usuario(usuario):
 
     usuarios.append(f'nome:{nome},data de nascimento:{data_nascimento},endereço:{endereço}')
     print('Cadastro realizado com sucesso!')
+
+
+while True:
+    op = menu()
+
+    if op =='d':
+        valor = float(input('Digite o valor do depósito: '))
+        saldo = deposito(valor,saldo)
+    if op =='s':
+        valor = float(input('Digite o valor do Saldo: '))
+        saldo = saque(valor,saldo)
+
+    break
+
